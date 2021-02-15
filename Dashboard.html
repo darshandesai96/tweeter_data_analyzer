@@ -1,0 +1,44 @@
+<!Doctype html>
+<html>
+<style>
+.btn-group button {
+  background-color: #4CAF50; /* Green background */
+  border: 1px solid green; /* Green border */
+  color: white; /* White text */
+  padding: 10px 24px; /* Some padding */
+  cursor: pointer; /* Pointer/hand icon */
+  float: left; /* Float the buttons side by side */
+}
+
+/* Clear floats (clearfix hack) */
+.btn-group:after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.btn-group button:not(:last-child) {
+  border-right: none; /* Prevent double borders */
+}
+
+/* Add a background color on hover */
+.btn-group button:hover {
+  background-color: #3e8e41;
+}
+</style>
+<body>
+<center>
+<h1>Analyzing Social Media for the Digital Marketing Strategies</h1>
+<h2>Project 3 Dashbaord - DataScience </h2>
+</center>
+<div class="btn-group">
+  <button><a href="http://127.0.0.1:8080/plot_for_date" target="_blank">Datewise Plot</a></button>
+  <button><a href="http://127.0.0.1:8080/sentiment_norm" target="_blank">Sentimental Anaylsis with Normalized Plot</a></button>
+  <button><a href="http://127.0.0.1:8080/sentiment" target="_blank">Sentimental Analysis without Normalized Plot</a></button>
+  <button><a href="http://127.0.0.1:8080/top_positive" target="_blank">Top Positive Hashtags</a></button>
+  <button><a href="http://127.0.0.1:8080/top_negative" target="_blank">Top Negative Hashtags</a></button>
+</div>
+
+</body>
+</html>
+
